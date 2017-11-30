@@ -1,0 +1,74 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceRoot}"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/c++/5",
+                "/usr/include/x86_64-linux-gnu/c++/5",
+                "${workspaceRoot}/Development/Librairies/Linux/SFML/include"
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "E:/Program Files/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++",
+                "E:/Program Files/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/x86_64-w64-mingw32",
+                "E:/Program Files/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++/tr1",
+                "E:/Program Files/mingw64/x86_64-w64-mingw32/include",
+                "${workspaceRoot}/Development/Librairies/Windows/SFML/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "browse": {
+                "path": [
+                    "E:/Program Files/mingw64/lib/gcc/x86_64-w64-mingw32/6.1.0/include/c++",
+                    "E:/Program Files/mingw64/x86_64-w64-mingw32/include",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 3
+}
