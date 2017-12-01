@@ -7,5 +7,5 @@
     "files.associations": {
         "iostream": "cpp"
     },
-    "C_Cpp.intelliSenseEngine": "Default"
+    "C_Cpp.intelliSenseEngine": "Tag Parser"
 }
