@@ -34,6 +34,8 @@ sudo ldconfig <repository-folder>/Development/Librairies/Linux/SFML/lib
 
 * Change the application name accordingly in `.vscode/launch.json` file.
 
+* Configure your include paths in `c_cpp_properties.json`.
+
 ## Improvements to work on
 
 * Compile SFML with g++ 6 on Linux
