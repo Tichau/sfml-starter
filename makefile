@@ -16,9 +16,8 @@ LDFLAGS = -std=c++11 -L$(LIBDIR)/$(PLATFORM)/SFML/lib
 LDDEBUGLIBS = -lsfml-graphics-d -lsfml-window-d -lsfml-system-d
 LDRELEASELIBS = -lsfml-graphics -lsfml-window -lsfml-system
 
-SRCS = main.cpp
-_OBJS=$(subst .cpp,.o,$(SRCS))
-OBJS=$(patsubst %,$(OBJDIR)/%,$(_OBJS))
+SRCS=$(wildcard $(PROJECTDIR)/*.cpp)
+OBJS=$(patsubst $(PROJECTDIR)/%.cpp, $(OBJDIR)/%.o, $(SRCS))
 
 # Handle dependencies automatically
 #http://make.mad-scientist.net/papers/advanced-auto-dependency-generation/#combine

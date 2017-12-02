@@ -40,3 +40,5 @@ sudo ldconfig <repository-folder>/Development/Librairies/Linux/SFML/lib
 
 * Compile SFML with g++ 6 on Linux
     For now the project is setup for the C++11 standard since the linux SFML library has been compiled with g++ 4 (https://gcc.gnu.org/projects/cxx-status.html). 
+
+* Setup a linter (for example cpplint https://google.github.io/styleguide/cppguide.html)
