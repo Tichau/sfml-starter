@@ -5,15 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         { 
-            "name": "(gdb) Attach",
+            "name": "(gdb) Attach Linux",
             "type": "cppdbg",
             "request": "attach",
             "program": "${workspaceFolder}/Build/Linux/Debug/Game.out",
             "processId": "${command:pickProcess}",
             "MIMode": "gdb"
         },
+        { 
+            "name": "(gdb) Attach Windows",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceFolder}/Build/Windows/Debug/Game.exe",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe"
+        },
         {
-            "name": "(gdb) Launch",
+            "name": "(gdb) Launch Linux",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/Build/Linux/Debug/Game.out",
@@ -23,6 +32,27 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build debug"
+        },
+        {
+            "name": "(gdb) Launch Windows",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Build/Windows/Debug/Game.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Build/Windows/Debug/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
