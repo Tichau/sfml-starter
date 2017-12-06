@@ -16,11 +16,6 @@ It is possible to build on Windows and Linux in two default target (Debug and Re
 sudo apt install g++-4.9
 ```
 
-* Add SMFL librairies to `LD_LIBRARY_PATH` environement variable:
-```bash
-sudo ldconfig <repository-folder>/Development/Librairies/Linux/SFML/lib
-```
-
 ### Windows
 
 * Install GCC 6.1.0 MinGW (SEH) - 64-bit [Download](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/6.1.0/threads-posix/seh/x86_64-6.1.0-release-posix-seh-rt_v5-rev0.7z/download)

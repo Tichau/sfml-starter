@@ -29,7 +29,12 @@
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/Build/Linux/Debug/",
-            "environment": [],
+            "environment": [
+                {
+                    "name": "LD_LIBRARY_PATH",
+                    "value": "$LD_LIBRARY_PATH:${workspaceFolder}/Development/Librairies/Linux/SFML/lib"
+                }
+            ],
             "externalConsole": false,
             "MIMode": "gdb",
             "setupCommands": [
